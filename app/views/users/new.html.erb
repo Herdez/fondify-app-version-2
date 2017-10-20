@@ -1,0 +1,11 @@
+
+<% provide(:title, 'Sign up') %>
+
+<% if current_user %>
+  <h1>Adding a New User</h1>
+  <%= render 'users/new_user' %>
+<% else %>
+  <h1>Sign up</h1>
+  <%= render 'users/new_admin' %>
+<% end %>
+
