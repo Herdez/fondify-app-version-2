@@ -2,6 +2,8 @@ class User < ApplicationRecord
 
 	attr_accessor :remember_token
 
+  has_many :projects
+
 	before_save { name.downcase! }
 	before_save { email.downcase! }
 	
