@@ -10,7 +10,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'bcrypt'
 gem 'bootstrap-sass'
 gem 'rb-readline'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave'
+gem 'mini_magick'
 
 
 group :development, :test do
