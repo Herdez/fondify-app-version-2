@@ -188,7 +188,7 @@ DEPENDENCIES
   better_errors
   bootstrap-sass
   byebug
-  carrierwave
+  carrierwave (~> 1.0)
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
