@@ -12,10 +12,9 @@
   <p>
     <%= f.text_field :description, class: "input" %>
   </p>
-  <%= f.label :Image %>
-  <p>
-    <%= f.text_field :image, class: "input" %>
-  </p>
+ <div class='field'>
+    <%= f.file_field :image %>
+  </div>
   <p>
     <%= f.submit "Save", class: "button is-primary is-large" %>
   </p>
