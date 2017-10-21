@@ -5,7 +5,7 @@ class CreateProjects < ActiveRecord::Migration[5.0]
       t.string :title
       t.string :description
       t.string :image
-      t.boolean :status, :default => 0
+      t.boolean :status, :default => false
       t.timestamps
     end
   end
