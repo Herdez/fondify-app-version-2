@@ -15,18 +15,15 @@ Rails.application.routes.draw do
       	
     resources :users
 
-    get   '/registred',  to:'users#registred',  as: 'registred'
-    get   '/record',  to:'users#record',  as: 'record'
-    post  '/record/user/:id',  to:'users#record_user',  as: 'record_user'
-    post  '/users/:id/delete',  to: 'users#delete',  as: 'delete'
-    post  '/users/:id/edit', to: 'users#edit', as: 'to_edit'
-    get   'users/:id', to: 'users#update', as: 'to_update_user'
+    delete  '/projects/:id/delete',  to: 'projects#destroy',  as: 'destroy_project'
+    post  '/projects/:id/edit', to: 'projects#edit', as: 'edit_project'
+    post   '/projects/:id', to: 'projects#update', as: 'update_project'
 
     get   '/visitors', to: 'visitors#index',  as: 'index'
     post  '/visitors', to: 'visitors#view',   as: 'view'
 
-    post    '/projects/new',  to: 'projects#new', as: 'project_new'
-    # post   '/user/:user_id/projects',  to: 'projects#create', as: 'create_project'
+    get    '/projects/new',  to: 'projects#new', as: 'project_new'
+    get   '/projects/registered',  to: 'projects#registered', as: 'show_projects'
     #get    '/projects/show',  to: 'projects#index', as: 'project_show'
     resources :projects
 end

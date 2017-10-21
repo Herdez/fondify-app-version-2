@@ -1,0 +1,42 @@
+<h1>Administrator</h1>
+
+<div class="container">
+
+    <h3>Info Projects</h3>
+
+    <table class="table table-bordered table-striped" >
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Status</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <!-- <td>&nbsp;</td> -->
+        </tr>
+        </thead>
+
+    <% if @projects %>
+	    <div class="data" > 
+
+		    <% @projects.each do |project| %> 
+		        <tr>
+		            <td><%= project.title %></td>
+		            <td><%= project.description %></td>
+		            <td><%= project.image %></td>
+		            <td><%= project.status %></td>
+
+		            <td><%= button_to 'Edit', edit_project_path(project), class: 'btn btn-primary' %></td>
+	              <td><%= button_to 'Destroy', destroy_project_path(project), class: 'btn btn-danger', method: :delete,
+                                  data: { confirm: "You sure?" } %></td>
+		        </tr>
+			  <% end %>
+	    </div>
+    <% end %>
+
+</table>
+
+
+

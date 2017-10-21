@@ -11,24 +11,6 @@ class UsersController < ApplicationController
       p @user_edit = User.find(params[:id])
     end
 
-    def registred
-      @all_user = User.where(admin: false)
-      if @all_user.count == 1
-        p @one_user = User.find_by(admin: false)
-        @all_user = false
-      end
-      p @all_user
-    end
-    
-    def record
-      @all_tratment = Treatment.all
-    end
-
-    def record_user
-      @one_treatment = Treatment.find_by(user_id: params[:id].to_i)
-      render 'record'
-    end
-
   	def create
     	@user = User.new(user_params)
     	if @user.save
