@@ -1,0 +1,32 @@
+<div class="block">
+    <%= button_to "Add New Project", project_new_path, class: "btn btn-large btn-warning" %>
+</div>
+
+<% if @projects %>
+	<h1>Projects</h1>
+	<div class="row">
+	<table class="table table-striped">
+	 <tr class="something">
+	   <th id="tabletitle1" class="col-md-2">Title</th>
+	   <th id="tabletitle2" class="col-md-2">Description</th>
+	   <th id="tabletitle3" class="col-md-2">Image</th>
+	   <th id="tabletitle3" class="col-md-4">Status</th>
+	   <th colspan="6"></th>
+	 </tr>
+	 <% @projects.each do |project| %>
+	   <tr>
+	     <td><%= project.title %></td>
+	     <!-- Aquí le agregué month y day y year, dividiendo en 3 partes esta sección, para poder tener los datos completos del seed -->
+	     <!-- Aquí esto va a tener problemas si la clase de fecha es nil -->
+	     <td><%= project.description %></td>
+	     <td><%= project.image %></td>
+	     <% if project.status == false %>
+	       <td>No Accept</td></td>
+	     <% else %>
+	       <td>Accept</td></td>
+	     <% end %>
+	   </tr>
+	 <% end %>
+	</table>
+	</div>
+<% end %>

@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-	def new
+	  def new
   		@user = User.new
   	end
 
@@ -37,7 +37,7 @@ class UsersController < ApplicationController
           redirect_to index_url
         else
     		  log_in @user
-      		flash[:success] = "Welcome to the App!"
+      		flash[:success] = "Welcome!"
       		redirect_to @user
         end
     	else

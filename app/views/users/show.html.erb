@@ -3,21 +3,16 @@
 
 
 <% if current_user.admin %>
-<h1>Welcome Administrator</h1>
+	<h1>Welcome Administrator <%= @user.name %></h1>
 <% else %>
-<h1>Welcome¡</h1>
+	<h1>Welcome <%= @user.name %>!</h1>
+	<div class="block">
+		 <aside class="col-md-4">
+	    <%= link_to image_tag("goal.png", size: "150x150", alt: "Projects"), new_project_path %>
+	   </aside>
+	</div>
 <% end %>
 
-
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
-</div>
 
 
 
