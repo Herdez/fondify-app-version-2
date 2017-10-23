@@ -14,7 +14,9 @@
             <% if logged_in? %>
 
                 <% if current_user.admin %>
-                    <li><%= link_to "Projects", show_projects_path %></li>
+                  <li><%= link_to "Projects", show_projects_path %></li>
+                <% else %>
+                  <li><%= link_to "My Projects", projects_path %></li>
                 <% end %>
 
                 <li class="dropdown">
@@ -28,9 +30,6 @@
                     <li><%= link_to "Log out", logout_path, method: :delete %></li>
                 </ul>
                 </li>
-
-
-
             <% else %>
                 <li><%= link_to "Home", root_path %></li>
                 <li><%= link_to "Log in", login_path %></li>

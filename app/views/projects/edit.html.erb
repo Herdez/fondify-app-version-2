@@ -1,26 +1,35 @@
-<% provide(:title, 'Edit Project') %>
-<h3>Edit Project of <%= User.find(@project.user_id).name %></h3>
-<%= form_for @project, url: update_project_path(@project), :method => :POST do |f| %>
-  <p>
-    <%= f.hidden_field :user_id, :value => @project.user_id, class: "input" %>
-  </p>
-  <%= f.label :title %>
-	<p>
-    <%= f.text_field :title, class: "input" %>
-  </p>
-  <%= f.label :Description %>
-  <p>
-    <%= f.text_field :description, class: "input" %>
-  </p>
-  <%= f.label :Image %>
-  <p>
-    <%= f.text_field :image, class: "input" %>
-  </p>
-  <%= "Status of Accepted" %>
-  <p>
-    <%= f.text_field :status, class: "input" %>
-  </p>
-  <p>
-    <%= f.submit "Save", class: "button is-primary is-large" %>
-  </p>
+<% if current_user.admin == true %>
+  <% provide(:title, 'Edit Project') %>
+  <h3>Edit Project of <%= User.find(@project.user_id).name %></h3>
+  <%= form_for @project, url: update_project_path(@project), :method => :POST do |f| %>
+    <p>
+      <%= f.hidden_field :user_id, :value => @project.user_id, class: "input" %>
+    </p>
+    <%= f.label :title %>
+  	<p>
+      <%= f.text_field :title, class: "input" %>
+    </p>
+    <%= f.label :Description %>
+    <p>
+      <%= f.text_field :description, class: "input" %>
+    </p>
+    <p>
+      <label>Upload a Picture</label>
+      <%= f.file_field :image %>
+      <%= f.hidden_field :image_cache %>
+    </p>
+    <div class="image-pre">
+        <%= image_tag(@project.image_url(:thumb)) if @project.image? %>
+    </div>
+    <%= "Status of Accepted" %>
+    <p>
+      <%= f.text_field :status, class: "input" %>
+    </p>
+    <p>
+      <%= f.submit "Save", class: "button is-primary is-large" %>
+    </p>
+  <% end %>
 <% end %>
+
+
+  

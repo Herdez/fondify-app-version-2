@@ -16,10 +16,8 @@
 	 <% @projects.each do |project| %>
 	   <tr>
 	     <td><%= project.title %></td>
-	     <!-- Aquí le agregué month y day y year, dividiendo en 3 partes esta sección, para poder tener los datos completos del seed -->
-	     <!-- Aquí esto va a tener problemas si la clase de fecha es nil -->
 	     <td><%= project.description %></td>
-	     <td><%= project.image %></td>
+	     <td><%= image_tag(project.image_url(:thumb)) if project.image? %></td>
 	     <% if project.status == false %>
 	       <td>No Accept</td></td>
 	     <% else %>

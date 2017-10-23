@@ -20,6 +20,7 @@ class ProjectsController < ApplicationController
 
 	def edit
 		@project = Project.find(params[:id])
+		@project.image.cache!
 	end
 
 	def update
@@ -40,6 +41,10 @@ class ProjectsController < ApplicationController
 
 	def registered
 		@projects = Project.all
+	end
+
+	def info
+		@project = Project.find(params[:id])
 	end
 
 	private

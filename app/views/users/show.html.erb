@@ -6,18 +6,14 @@
 	<h1>Welcome Administrator <%= @user.name %></h1>
 <% else %>
 	<h1>Welcome <%= @user.name %>!</h1>
-	<div class="block">
-		 <aside class="col-md-4">
-	    <%= link_to image_tag("goal.png", size: "150x150", alt: "Projects"), new_project_path %>
-	   </aside>
+	<div>
+		 <div class="inner">
+	     <%= link_to image_tag("goal.png", size: "150x150", alt: "Projects"), new_project_path %>
+	   </div>
+	   <div class="inner">
+	     <h4>Add New Project</h4>
+	   </div>
 	</div>
-<% end %>
-
-
-
-
-<% if @all_user %>
-  <% render "registred" %>
 <% end %>
 
 

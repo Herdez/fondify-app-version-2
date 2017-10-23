@@ -1,0 +1,4 @@
+$('<%= j render "projects/info", title: "Info Project" %>').on('hidden.bs.modal', function (e) {
+	  $(this).remove();
+	  $('.modal-backdrop').remove();
+}).modal();

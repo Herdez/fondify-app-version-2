@@ -24,6 +24,6 @@ Rails.application.routes.draw do
 
     get    '/projects/new',  to: 'projects#new', as: 'project_new'
     get   '/projects/registered',  to: 'projects#registered', as: 'show_projects'
-    #get    '/projects/show',  to: 'projects#index', as: 'project_show'
+    get    '/projects/:id/info',  to: 'projects#info', as: 'info_project'
     resources :projects
 end
