@@ -1,0 +1,341 @@
+/* mixins, variables, etc. */
+/* miscellaneous */
+/* line 14, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* universal */
+/* line 28, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+body {
+  padding-top: 60px;
+}
+
+/* line 32, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+section {
+  overflow: auto;
+}
+
+/* line 36, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 40, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.center {
+  text-align: center;
+}
+
+/* line 44, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+/* line 52, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+/* line 56, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* line 63, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+/* line 72, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* header */
+/* line 80, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+/* line 90, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* fig_header */
+/* line 97, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+#logo_fig {
+  float: left;
+  margin-right: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+/* footer */
+/* line 108, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+/* line 116, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+footer a {
+  color: #555;
+}
+
+/* line 120, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+footer a:hover {
+  color: #222;
+}
+
+/* line 124, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+footer small {
+  float: left;
+}
+
+/* line 128, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+/* line 133, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* sidebar */
+/* line 142, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+aside section.user_info {
+  margin-top: 20px;
+}
+/* line 145, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+aside section {
+  padding: 10px 0;
+  margin-top: 20px;
+}
+/* line 148, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+aside section:first-child {
+  border: 0;
+  padding-top: 0;
+}
+/* line 152, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+aside section span {
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1;
+}
+/* line 157, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+aside section h1 {
+  font-size: 1.4em;
+  text-align: left;
+  letter-spacing: -1px;
+  margin-bottom: 3px;
+  margin-top: 0px;
+}
+
+/* line 167, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 172, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+/* forms */
+/* line 179, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 186, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+input {
+  height: auto !important;
+}
+
+/* line 191, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+/* line 194, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.checkbox span {
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+/* line 200, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
+/* line 210, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.div-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 215, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.div-img .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -webkit-transform: 0px 0px 1;
+  -moz-transform: 0px 0px 1;
+  -ms-transform: 0px 0px 1;
+  -o-transform: 0px 0px 1;
+  transform: 0px 0px 1;
+  transform: translate(0px, 0px) scale(1);
+  -webkit-transform: translate(0px, 0px) scale(1);
+  -moz-transform: translate(0px, 0px) scale(1);
+  -o-transform: translate(0px, 0px) scale(1);
+  -ms-transform: translate(0px, 0px) scale(1);
+  -webkit-transition: all 0s ease 0s;
+  -moz-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+/* line 239, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.div-img .text {
+  font-family: 'Open Sans';
+  position: relative;
+  z-index: -1;
+  display: block;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: 0px 0px 1;
+  -moz-transform: 0px 0px 1;
+  -ms-transform: 0px 0px 1;
+  -o-transform: 0px 0px 1;
+  transform: 0px 0px 1;
+  transform: translate(0px, 0px) scale(1);
+  -webkit-transform: translate(0px, 0px) scale(1);
+  -moz-transform: translate(0px, 0px) scale(1);
+  -o-transform: translate(0px, 0px) scale(1);
+  -ms-transform: translate(0px, 0px) scale(1);
+  -webkit-transition: all 0s ease 0s;
+  -moz-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+/* line 266, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.div-img:hover .img {
+  -webkit-transform: 0px -30px 0.5;
+  -moz-transform: 0px -30px 0.5;
+  -ms-transform: 0px -30px 0.5;
+  -o-transform: 0px -30px 0.5;
+  transform: 0px -30px 0.5;
+  transform: translate(0px, -30px) scale(0.5);
+  -webkit-transform: translate(0px, -30px) scale(0.5);
+  -moz-transform: translate(0px, -30px) scale(0.5);
+  -o-transform: translate(0px, -30px) scale(0.5);
+  -ms-transform: translate(0px, -30px) scale(0.5);
+  border-radius: 50%;
+}
+
+/* line 279, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.div-img:hover .text {
+  -webkit-transform: 0px 0px 2;
+  -moz-transform: 0px 0px 2;
+  -ms-transform: 0px 0px 2;
+  -o-transform: 0px 0px 2;
+  transform: 0px 0px 2;
+  transform: translate(0px, 0px) scale(2);
+  -webkit-transform: translate(0px, 0px) scale(2);
+  -moz-transform: translate(0px, 0px) scale(2);
+  -o-transform: translate(0px, 0px) scale(2);
+  -ms-transform: translate(0px, 0px) scale(2);
+}
+
+/* line 292, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.bg {
+  background: url(social_people-06d3b3479a43d031dcef7ea6ff4670184f3b255af7fec57e296f2834bc589374.jpg) no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 250px;
+  /*same height as jumbotron */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 302, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.jumbotron {
+  margin-bottom: 0px;
+  height: 250px;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background: transparent;
+}
+
+/* line 310, /Users/codeacamp/Documents/brief-web-app/fondify-app-mvp/fondify-app-v2/fondify-app-mvp/app/assets/stylesheets/custom.scss */
+.inner {
+  width: 18%;
+  margin: 0 auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
